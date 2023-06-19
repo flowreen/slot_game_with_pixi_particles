@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Einstein Eureka Moments</title>
+	<link rel="icon" href="favicon.png">
+    <!-- remove body margin and scrolling and make the display a block type (according to a random resize guide) -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+        }
+
+        canvas {
+            display: block;
+            position: absolute;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+<script src="./build/bundle.js"></script>
+<div id="debug" style="position: absolute; top: 0px; left: 0px; width: 120px; height: 70px; visibility: hidden">
+    <!-- the lines below were already present in provided pixi template, which adds the fps performance on top left -->
+    <!-- for dev purposes add stats () from: https://github.com/mrdoob/stats.js/ -->
+    <script>(function () {
+        var script = document.createElement('script');
+        script.onload = function () {
+            var stats = new Stats();
+            document.body.appendChild(stats.dom);
+            requestAnimationFrame(function loop() {
+                stats.update();
+                requestAnimationFrame(loop)
+            });
+        };
+        script.src = '//mrdoob.github.io/stats.js/build/stats.min.js';
+        document.head.appendChild(script);
+    })()
+    </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+    "name": "slot-game-with-pixi-particles",
+    "version": "1.0.0",
+    "author": "Florin Nutiu",
+    "dependencies": {
+        "pixi.js": "^4.8.5"
+    },
+    "devDependencies": {
+        "@types/pixi.js": "^4.8.6",
+        "ts-loader": "^5.3.3",
+        "typescript": "^3.2.2",
+        "webpack": "^4.28.1",
+        "webpack-cli": "^3.2.1",
+        "webpack-command": "^0.4.2",
+        "webpack-dev-server": "^3.1.14"
+    },
+    "scripts": {
+        "build": "webpack",
+        "start": "webpack --mode development && webpack-dev-server --mode development"
+    }
+}
