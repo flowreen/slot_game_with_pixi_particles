@@ -1,18 +1,16 @@
 {
-    "include": [ "./src/**/*.ts" ],
-    "exclude": [
-        "node_modules"
-      ]
-      ,
-    "compilerOptions": {
-        "target": "es5",
-        "module": "commonjs",
-        "lib": [
-            "es2018",
-            "dom"
-        ]
-      
-    }
-
-} 
-
+  "include": [
+    "./src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": [
+      "es2018",
+      "dom"
+    ]
+  }
+}

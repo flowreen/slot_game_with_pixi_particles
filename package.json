@@ -3,19 +3,17 @@
     "version": "1.0.0",
     "author": "Florin Nutiu",
     "dependencies": {
-        "pixi.js": "^4.8.5"
+        "pixi.js": "^4.8.9"
     },
     "devDependencies": {
-        "@types/pixi.js": "^4.8.6",
-        "ts-loader": "^5.3.3",
-        "typescript": "^3.2.2",
-        "webpack": "^4.28.1",
-        "webpack-cli": "^3.2.1",
-        "webpack-command": "^0.4.2",
-        "webpack-dev-server": "^3.1.14"
+        "@types/pixi.js": "^4.8.9",
+        "ts-loader": "^5.4.5",
+        "typescript": "^3.9.10",
+        "webpack-cli": "3.2.3",
+        "webpack-dev-server": "3.2.1"
     },
     "scripts": {
-        "build": "webpack",
-        "start": "webpack --mode development && webpack-dev-server --mode development"
+        "starti": "rmdir /s /q node_modules & del /f /q package-lock.json & nvm use lts & npm i && webpack-dev-server --mode development",
+        "start": "webpack-dev-server --mode development"
     }
 }
